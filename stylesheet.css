@@ -1,0 +1,256 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', 'Open Sans', Arial;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: black;
+    padding: 0px 15px;
+    padding-bottom: 15px;
+}
+h4{
+    font-size: 14px;
+    text-align: center;
+}
+
+/* start of navbar code */
+.nav-bar {
+    margin-top: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10px;
+    height: 60px;
+    background-color: #121212;
+}
+.icon-nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo{
+    max-width: 70px;
+    padding: 10px 0px;
+}
+
+
+.list-nav-bar {
+    list-style: none;
+    text-transform: uppercase;
+    display: flex;
+    gap: 20px;
+}
+
+.list-item a {
+    cursor: pointer;
+    font-size: 15px;
+    text-decoration: none;
+    color: #858998;
+    text-align: center;
+    margin-left: 0.5rem;
+    letter-spacing: 0.1rem;
+    font-weight: 500;
+}
+
+.list-item a:hover {
+    color: #a0a0a0;
+}
+
+/* end of navbar code */
+
+/* start of main pages code */
+main {
+    margin-top: 15px;
+    background-color: #121212;
+    color: white;
+    padding-bottom: 15px;
+}
+.top-dropDown {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+.vert-line {
+    height: 0.5px;
+    background-color: gray;
+}
+.visible-date{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    font-size: 13px;
+}
+.left-content{
+display: flex;
+gap: 15px;
+}
+.right-content{
+    display: flex;
+    align-items: center;
+    gap:7px;
+}
+.logo-and-text{
+    display: flex;
+    align-items: center;
+    gap:4px;
+}
+.top-left-logo{
+    max-width: 20px;
+}
+.bg-gray{
+    background-color: #1c1c1c;
+    padding:5px 13px;
+    border-radius: 5px;
+}
+.bg-orange{
+    background-color: rgb(233, 62, 7);
+    padding:5px 13px;
+    border-radius: 5px;
+}
+.top-right-logo{
+    max-width: 15px;
+    max-height: 15px;
+}
+.week-data{
+    text-align: center;
+    padding: 15px 0px;
+    font-size: 14px;
+}
+.table-container{
+    padding: 0px 15px;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: fixed;
+  }
+  .border{
+    border: 1px solid #dddddd;
+  }
+  td, th {
+    padding: 8px;
+    text-align: center; 
+  }
+  td{
+    font-size: 13px;
+    font-weight: 300;
+  }
+  .table-tdText{
+    font-size: 13px;
+    font-weight: 300;
+  }
+  .bg-green{
+    background-color: rgb(22, 94, 61);
+  }
+  .dropbtn {
+    background-color: #1c1c1c;
+    color: white;
+    font-size: 16px;
+    border: none;
+  }
+
+  /* start of attendance page */
+.attendances{
+    margin-top: 30px;
+    padding: 15px;
+}
+.attendances-options{
+    display: flex;
+    flex-direction: column;
+}
+.grades{
+    margin-top: 30px;
+    padding: 15px;
+}
+.bg-lightGray{
+background-color: #242424;
+}
+.bg-red{
+    background-color: rgb(184,49, 49);
+}
+.textRedHeading{
+    color: rgb(255, 2, 2);
+}
+
+.cm-e-menu {
+	background-color: #222;
+	position: relative;
+	z-index: 1000;
+	color: #fff;
+	font-weight: 200;
+	box-shadow: 0 0 10px black;
+	}
+    .course{
+        background-color: transparent !important; 
+        box-shadow: none;
+    }
+    .course:hover{
+    background-color: transparent !important;
+    }
+.cm-e-menu ul {
+	margin: 0; padding: 0;
+}
+.cm-e-menu li {
+	position: relative;
+	white-space: nowrap;
+	cursor: pointer;
+	text-transform: capitalize !important;
+	list-style: none;
+	-webkit-transition: background-color ease-in 300ms;
+	-moz-transition: background-color ease-in 300ms;
+	-ms-transition: background-color ease-in 300ms;
+	-o-transition: background-color ease-in 300ms;
+	transition: background-color ease-in 300ms;
+    padding-top: 10px;
+}
+.cm-e-menu li:hover {
+	background-color: #3d3d3d;
+	text-shadow: 0 10px 10px #222;
+}
+.cm-e-menu ul li.topmenu {
+	display: inline-table;
+	padding: .3em 1em;
+}
+.cm-e-menu .topmenu ul {
+	display:none;
+	position: absolute;
+	background-color: #222;
+}
+.cm-e-menu li:hover > ul {
+	display: table;
+}
+.cm-e-menu ul.submenu {
+	top: 100%; left: 0;
+	padding-top: .5em;
+	padding-bottom: .5em;	
+	box-shadow: 0 0 10px black;
+}
+.cm-e-menu ul.submenu .submenu {
+	top: -.5em; left: 100%;
+	font-size: 1em
+}
+.cm-e-menu ul.submenu li {
+	padding: .2em 1.5em;
+	font-size: .9rem;
+}
+.cm-e-menu li.divider {
+	padding: 0;
+	border-top: 1px solid #343434;
+	margin: .5rem auto .3rem;
+	cursor: default;
+}
+.cm-e-menu li.divider:hover {
+	background-color: transparent;
+}
+
